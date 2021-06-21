@@ -12,7 +12,7 @@ from gradcam import GradCAM, GradCAMpp
 # load image
 img_dir = "./datasets/test"
 model_dir = "./models"
-img_name = "" # add image name here
+img_name = "18P31686_MG_HC003_ROI_30.jpg" # add image name here
 img_path = os.path.join(img_dir, img_name)
 pil_img = PIL.Image.open(img_path)
 
@@ -23,7 +23,7 @@ torch_img = F.upsample(torch_img, size=(224, 224), mode='bilinear', align_corner
 normed_torch_img = normalizer(torch_img)
 
 #Load torchvision models and make model dictionaries
-resnet = torch.load(os.path.join(model_dir, "")) #add model file name here
+resnet = torch.load(os.path.join(model_dir, "resnet101_28.pkl")) #add model file name here
 resnet.eval(), resnet.cuda();
 # for module in resnet.module.named_modules():
 #    print (module)
@@ -39,7 +39,8 @@ cam_dict['resnet'] = [resnet_gradcam, resnet_gradcampp]
 #Feedforward image, calculate GradCAM/GradCAM++, and gather results
 images = []
 for gradcam, gradcam_pp in cam_dict.values():
-    mask, _ = gradcam(normed_torch_img)
+    #mask, _ = gradcam(normed_torch_img)
+    mask, _ = gradcam(normed_torch_img, class_idx=1)
     # heatmap, result = visualize_cam(mask, torch_img)
     heatmap, result = visualize_cam(mask.cpu(), torch_img)
     images.append(torch.stack([torch_img.squeeze().cpu(), heatmap, result], 0))
