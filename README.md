@@ -6,7 +6,7 @@ Models for polished and unpolished rice are available <a href="https://ksuemailp
  <br />
 
 ##
-The repository introduced a tool segementing rice chalkiness from rice seeds using Grad-CAM (Selvaraju et al, ICCV, 2017). The Pytorch implementation of Grad-CAM (WonKwang Lee, 2018), available at https://github.com/1Konny/gradcam_plus_plus-pytorch, was used to segment chaliness area from rice seed. Models are trained with polished rice (1000+ seeds) and unpolished rice (10000+ seeds), respectively.  The dataset, model, and code where the layers are modified according to the rice chlakiness segmentation is made available here to enable easy training or fine-tuning of models for other sets of seeds chalkiness segmentation. 
+The repository contains data and models for detecting chalkiness in rice grains. The models are based on a weakly supervised segementation approach, Grad-CAM (Selvaraju et al., 2017). The Pytorch implementation of Grad-CAM (WonKwang Lee, 2018), available at https://github.com/1Konny/gradcam_plus_plus-pytorch, was used to segment chaliness area from rice grains. We experiment with models that are trained with both polished and unpolished rice seeds.  The dataset, model, and code are available in this repository to enable reproducibility, reuse and transfer of knowledge to chalkiness detection tasks for other types of rice seeds.
 <br />
 
 <br>
