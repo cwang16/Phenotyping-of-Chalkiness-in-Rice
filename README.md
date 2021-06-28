@@ -2,7 +2,7 @@
 <!--Web-based application will be available as soon as the paper is published <br />
 Mobile friendly, no installation required, no coding skills required <br />-->
 Dataset of original images is available <a href="https://ksuemailprod-my.sharepoint.com/:f:/g/personal/cwang16_ksu_edu/EuW4snBXRwhFizUUhDymxM8BSwG7PQmdX64yHqHak_GhSg?e=HufGdh">here.</a>  <br />
-Models for polished and unpolished rice are available <a href="https://ksuemailprod-my.sharepoint.com/:f:/g/personal/cwang16_ksu_edu/EuWYz0GHek5EsJoWOXyQMFcB-i47HwHYnv9tAUipJuB3Hw?e=mGRFep">here.</a>
+Models for polished and unpolished rice are available <a href="https://ksuemailprod-my.sharepoint.com/:f:/g/personal/cwang16_ksu_edu/EuWYz0GHek5EsJoWOXyQMFcB-i47HwHYnv9tAUipJuB3Hw?e=mGRFep">here.</a>The models are used in main.py file.
  <br />
 <!-- Datasets of individual polished and unpolished seed images are available <a href="">here.</a>  <br />-->
 
