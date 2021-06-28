@@ -1,6 +1,6 @@
 # Deep Learning based High-Throughput Phenotyping of Chalkiness in Rice Exposed to High Night Temperature
-<!--Web-based application will be available as soon as the paper is published <br />-->
-Mobile friendly, no installation required, no coding skills required <br />
+<!--Web-based application will be available as soon as the paper is published <br />
+Mobile friendly, no installation required, no coding skills required <br />-->
 Dataset is available <a href="https://ksuemailprod-my.sharepoint.com/:f:/g/personal/cwang16_ksu_edu/EuW4snBXRwhFizUUhDymxM8BSwG7PQmdX64yHqHak_GhSg?e=HufGdh">here</a>  <br />
 Models for polished and unpolished rice are available <a href="https://ksuemailprod-my.sharepoint.com/:f:/g/personal/cwang16_ksu_edu/EuWYz0GHek5EsJoWOXyQMFcB-i47HwHYnv9tAUipJuB3Hw?e=mGRFep">here</a>
  <br />
