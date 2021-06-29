@@ -20,7 +20,7 @@ The repository contains data and models for detecting chalkiness in rice grains.
 __main.py__ is the code for segementing the rice chalkiness area from rice seeds <br />
 
 ## Segement rice chalkiness area from rice seeds:
-See below the command to segement the rice chalkiness area from rice seeds <br />
+See below steps to segement rice chalkiness area from rice seeds <br />
 __Step1__: change the path in line 15 and line 26 <br />
 __Step2__: python main.py <br />
 __Step3__: segmentation result saved at ./outputs <br />
