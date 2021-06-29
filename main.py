@@ -25,23 +25,17 @@ normed_torch_img = normalizer(torch_img)
 #Load torchvision models and make model dictionaries
 resnet = torch.load(os.path.join(model_dir, "resnet101_28.pkl")) #add model file name here
 resnet.eval(), resnet.cuda();
-# for module in resnet.module.named_modules():
-#    print (module)
 
 cam_dict = dict()
 
-# resnet_model_dict = dict(type='resnet', arch=resnet, layer_name='layer1', input_size=(224, 224))
 resnet_model_dict = dict(type='resnet', arch=resnet, layer_name= 'layer2_0_conv2', input_size=(224, 224))
 resnet_gradcam = GradCAM(resnet_model_dict, True)
 resnet_gradcampp = GradCAMpp(resnet_model_dict, True)
 cam_dict['resnet'] = [resnet_gradcam, resnet_gradcampp]
 
-#Feedforward image, calculate GradCAM/GradCAM++, and gather results
 images = []
 for gradcam, gradcam_pp in cam_dict.values():
-    #mask, _ = gradcam(normed_torch_img)
     mask, _ = gradcam(normed_torch_img, class_idx=1)
-    # heatmap, result = visualize_cam(mask, torch_img)
     heatmap, result = visualize_cam(mask.cpu(), torch_img)
     images.append(torch.stack([torch_img.squeeze().cpu(), heatmap, result], 0))
 
