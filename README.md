@@ -21,8 +21,8 @@ __main.py__ is the code for segementing the rice chalkiness area from rice seeds
 
 ## segement rice chalkiness area from rice seeds:
 See below the command to segement the rice chalkiness area from rice seeds <br />
-
-python main.py
+Step1: change the path in line 15 and line 26 
+Step2: python main.py
 
 
 
